@@ -1,0 +1,33 @@
+const TOKEN_TYPES = {
+  NUMBER: "NUMBER",
+  IDENTIFIER: "IDENTIFIER",
+  PLUS: "PLUS",
+  MINUS: "MINUS",
+  ASSIGN: "ASSIGN",
+  EQUAL: "EQUAL",
+  LPAREN: "LPAREN",
+  RPAREN: "RPAREN",
+  COMMA: "COMMA",
+  LCURLYBRACKET: "LCURLYBRACKET",
+  RCURLYBRACKET: "RCURLYBRACKET",
+  IF: "IF",
+  RETURN: "RETURN",
+  FUNCTION: "FUNCTION",
+  "+": "PLUS",
+  "-": "MINUS",
+  "=": "ASSIGN",
+  "==": "EQUAL",
+  "(": "LPAREN",
+  ")": "RPAREN",
+  ",": "COMMA",
+  "{": "LCURLYBRACKET",
+  "}": "RCURLYBRACKET",
+};
+
+const KEYWORDS = {
+  if: TOKEN_TYPES.IF,
+  return: TOKEN_TYPES.RETURN,
+  fn: TOKEN_TYPES.FUNCTION,
+};
+
+module.exports = { TOKEN_TYPES, KEYWORDS };
