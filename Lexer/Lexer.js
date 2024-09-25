@@ -61,7 +61,9 @@ class Lexer {
       identifierValue += this._getCurrentChar();
       this._advanceCursor();
     }
-    console.log(identifierValue);
+
+    if (isIdentifierIsTooLong(identifierValue))
+      throw new Error("Too long identifier name " + identifierValue);
 
     return createToken(
       KEYWORDS[identifierValue] || TOKEN_TYPES.IDENTIFIER,

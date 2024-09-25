@@ -2,7 +2,7 @@ const Lexer = require("./Lexer/Lexer");
 
 const program = `
 -135
-/* const imTooLongIdentifierShouldThrowAnError = 0 */
+ const imTooLongIdentifierShouldThrowAnError = 0 */
 const x = a - b /* je suis un commentaire  je dois etre ignoré */    
 const y = -2536
 const _ = 6

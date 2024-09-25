@@ -1,6 +1,6 @@
 const identifierLimitLength = 15;
 const isIdentifierIsTooLong = (identifier) => {
-  return identifier.length > 15;
+  return identifier.length > identifierLimitLength;
 };
 
 module.exports = {
