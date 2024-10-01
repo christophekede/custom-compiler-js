@@ -25,7 +25,7 @@ function createToken(tokenType, lexeme) {
   return { tokenType, lexeme };
 }
 
-module.exports = {
+export {
   isWhitespace,
   isDigit,
   isIdentifierStart,

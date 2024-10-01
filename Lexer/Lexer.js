@@ -1,5 +1,4 @@
-const {
-  isIdentifierTooLong,
+import {
   isWhitespace,
   createToken,
   isCommentStart,
@@ -7,11 +6,11 @@ const {
   isDigit,
   isIdentifierStart,
   isIdentifierPart,
-} = require("./utils");
-const { TOKEN_TYPES, KEYWORDS } = require("./tokenTypes");
-const { isIdentifierIsTooLong } = require("../Error");
+} from "./utils.js";
+import { TOKEN_TYPES, KEYWORDS } from "./tokenTypes.js";
+import { isIdentifierIsTooLong } from "../Error.js";
 
-class Lexer {
+export default class Lexer {
   constructor(sourceCode) {
     this._sourceCode = sourceCode;
     this._cursor = 0;
@@ -112,5 +111,3 @@ class Lexer {
     }
   }
 }
-
-module.exports = Lexer;

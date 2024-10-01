@@ -1,0 +1,16 @@
+{
+  "name": "compiler-in",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node tests/Lexer.test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

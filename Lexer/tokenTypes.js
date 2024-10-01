@@ -1,4 +1,4 @@
-const TOKEN_TYPES = {
+export const TOKEN_TYPES = {
   NUMBER: "NUMBER",
   IDENTIFIER: "IDENTIFIER",
   PLUS: "PLUS",
@@ -24,10 +24,8 @@ const TOKEN_TYPES = {
   "}": "RCURLYBRACKET",
 };
 
-const KEYWORDS = {
+export const KEYWORDS = {
   if: TOKEN_TYPES.IF,
   return: TOKEN_TYPES.RETURN,
   fn: TOKEN_TYPES.FUNCTION,
 };
-
-module.exports = { TOKEN_TYPES, KEYWORDS };
